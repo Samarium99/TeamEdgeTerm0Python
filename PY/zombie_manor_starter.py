@@ -24,9 +24,9 @@ player = Player()
 
 kitchen = Room()
 kitchen.name = "Kitchen"
-kitchen.description = "The kitchen is a really nice one! It has all the stuff you need to cook a healthy meal...of zombie parts! on the table there is a red pill."
+kitchen.description = "The kitchen is a really nice one! It has all the stuff you need to cook a healthy meal...of zombie parts! On the table there is a red pill."
 kitchen.objects =["potion", "sandwich", "knife"]
-kitchen.paths=["Living Room" , "Bathroom" , "Backyard" ]
+kitchen.paths=["Livingroom" , "Bathroom" , "Backyard" ]
 
 bathroom = Room() 
 bathroom.name= "Bathroom"
@@ -49,7 +49,7 @@ def check_answer(input):
   global input_msg
   global rooms
 
-  print("checking input :  " +  input)
+  print("checking input :  " +  input + "\n")
   input_msg = input
 
   #GO
@@ -107,6 +107,7 @@ def check_answer(input):
 
       else:
           print("No you can't pick that up")
+  #USE
 
   #Name
   elif "name" in input_msg:

@@ -26,20 +26,19 @@ import random
 	# Part 1: 
 	# Print instructions on the screen and 
 	# prompt the user to ask a question
-
-	
-
-  # --------------------------------------------
-
-
-
-
-
-
-
-
-
-
+print("HI...WELCOME!!! Shake the Magic 8 Ball and ask it about your life's greatest wonders...what will the answer be? Please keep in mind that the Magic 8 Ball can only respond to yes or no questions. ")	
+question = str(input("When you are ready, ask away! \n"))
+question = question.strip(" ")
+if question[-1] == "?":
+	positive = ["Sure", "Yes", "Very likely", "YES", "Definitely", "Of Course!"]
+	negative = ["Absolutely not.", "Indefinitely no.", "Never", "False.", "No", "Unlikely", "Nah, I don't think so."]
+	neutral = ["Maybe.", "Not Sure...", "Please Try Again at a later time...", "yesn't", "Who knows?", "...Feed..me..."]
+	combo = positive + negative + neutral
+	response = random.choice(combo)
+	print(response)
+else:
+	print("You cannot amount to anything if you don't FIX YOUR PUNCTUATION >:(")
+ # --------------------------------------------
 
 
 

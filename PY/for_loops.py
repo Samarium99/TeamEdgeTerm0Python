@@ -25,8 +25,13 @@ for x in range(11):
    
 
 #-->TODO: Write a loop that prints a happy birthday message for every year you have been alive.
-
-
+name = str(input("Hey, what's your name?\n"))
+age = int(input("And, what's your age?\n"))
+def message():
+    print(f"Happy Birthday, {name}")
+for x in range (age):
+    message()
+print("There you go!")
 
 print("------------------- CHALLENGE 2 : ITERATOR ----------------------")
 
@@ -38,10 +43,11 @@ for x in colors:
     print("The color is: " + x)
 
 #-->TODO: Declare a list with at least 10 animals. You provide the animals.
-animals = []
+animals = ["horse", "goat", "cow", "owl", "human", "fish", "cat", "dog", "frog", "butterfly"]
 
 #-->TODO: Print all the animals in the array with a for loop. 
-
+for x in animals:
+    print("The animal is: " + x)
 
 
 print("------------------- CHALLENGE 3 : EVEN COUNTDOWN ------------------")
@@ -57,10 +63,15 @@ else:
     print(str(random) + " is odd!")
 
 #-->TODO: Write a function that counts BACKWARDS from 100 and prints only odd numbers
-
-
+for x in range (100,0,-1):
+    if x % 2 != 0:
+        print(x)
 #-->TODO: Write a function that counts BACKWARDS from the given random number and prints only even numbers
-
+n = int(input("Give me a number: \n"))
+print()
+for x in range (n,0,-1):
+    if x % 2 == 0:
+        print(x)
 
 print("------------------- CHALLENGE 4 : Finder ------------------")
 
@@ -72,16 +83,20 @@ else:
     print("No, that color is not one my favorites")
 
 #-->TODO Declare a list of any strings you  want: cities, friends, movies, etc.
-
+zeldacharacters = ["zelda", "link", "ganon", "epona", "midna", "fi", "saria", "malon", "navi"]
 
 #-->TODO Prompt the user to "Guess" if an element is present. Store their response in a variable
-
+character = input("Try to guess one of my favorite Legend of Zelda characters?\n")
 
 #-->TODO Write function to prompt the user and see if the element is present. If so, print CONGRATULATIONS!
-
+def answer():
+    if character in zeldacharacters:
+        print("Yes, that is a good one")
+    else:
+        print("That one's okay.")
 
 #-->TODO Call your function.
-
+answer()
 
 
 print("------------------- CHALLENGE 5 : Nested ------------------")
@@ -99,6 +114,12 @@ for color in colors:
 
 
 #-->TODO Write a function that prints every letter in a sentence that a user enters.
-
+sentence = str(input("Give me a sentence and I'll spell it out for you!\n"))
+print(f"Your sentence is '{sentence}', and it is spelt:")
+for s in sentence:
+    print(" - " + s)
 
 #-->CHALLENGE: Let the user know which word is the shortest one!
+print(len(sentence.split()))
+short = len(sentence.split())
+print(f"The shortest word in your sentence is '{short}")

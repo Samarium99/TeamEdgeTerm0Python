@@ -1,3 +1,4 @@
+import decimal 
 # -------------------------------------------- 
 
 	# You've just learned about variables, conditionals, functions, and user input. 
@@ -25,6 +26,12 @@
 
 # -------------------------------------------- 
 
+food = {
+	"ham and cheese(no sandwich included)": 5.50,
+	"strawberry lemonade": 2.50,
+	"fruit salad": 3.75,
+  	"tomato soup": 2.50
+  }
 
 # -------------------------------------------- 
 
@@ -39,17 +46,24 @@
 
 # --------------------------------------------
 
+totalOrder = float
+def menu():
+	global values
+	global items
+	values = food.values() 
+	items = food.items()
+	for key, value in items:
+		print(f"{key}: $"+"{:.2f}".format(value))
 
-
-
-
-
-
-
-
-
-
-
+def takeOrder():
+	global newOrder
+	global totalOrder
+	global totalCost
+	print("\nWelcome to Economical Eats!\nHere is the menu:\n")
+	menu()
+	newOrder = input(str(f"\nPlease enter what you would like to order in the following format(no additional spaces!):\n'item1,item2,item3...'\n\n"))
+	totalOrder = list(newOrder.split(','))
+	
 # -------------------------------------------- 
 
 # Part 2:
@@ -64,6 +78,48 @@
 
 # -------------------------------------------- 
 
+def tallyOrder():
+	global itemNum
+	global totalOrder
+	global tip
+	totalCost = list()
+	
+	# for totalOrder in food:
+	# 	totalOrder.extend({values})
+	if "ham and cheese" in totalOrder:
+		totalCost.extend({5.50})
+	if "strawberry lemonade" in totalOrder:
+		totalCost.extend({2.50})
+	if "fruit salad" in totalOrder:
+		totalCost.extend({3.75})
+	if "tomato soup" in totalOrder:
+		totalCost.extend({2.50})
+
+	totalCost = sum(totalCost)
+
+	print("Your total cost after tax is:  $" + "{:.2f}".format(totalCost*.08875))
+
+	# tip = input(str(f"Would you like to add a tip?\n\nOptions:\n15%\n20%\nn/a\n"))
+	# if tip == "15%"
+	# 	print("Your total cost after tax is:  $" + "{:.2f}".format(totalCost*.0887 + totalCost*.15))
+	# if tip == "20%"
+	# 	print("Your total cost after tax is:  $" + "{:.2f}".format(totalCost*.0887 + totalCost*.20))
+	# if tip == "n/a"
+
+	# print("Please come again!")
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------""
+
+
+
+takeOrder()
+more = input(str("\nWould you like to order more?(Yes/No)\n"))	
+if more.lower() == "yes":
+	takeOrder()
+elif more.lower() == "no":
+	tallyOrder()
+else:
+	print("\nError.\nSorry, please come again later.")
 
 
 
@@ -89,7 +145,6 @@
 # Remember! Functions are meant to be reusable, so write a function that will work when called for each person!
 
 # -------------------------------------------- 
-
 
 
 

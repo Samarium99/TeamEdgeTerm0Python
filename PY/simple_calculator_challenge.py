@@ -1,4 +1,12 @@
 # -------------------------------------------- 
+# Ignore this section. This is just for checking your work
+
+def check_answers(gen_answer, correct_answer):
+    if gen_answer == correct_answer:
+        print("Your code works!")
+    else:
+	    print(f"Try again, your code generated {gen_answer} but the correct answer is {correct_answer}")
+# -------------------------------------------- 
 
 	# You've just learned all about functions. 
 	# Now take what you've learned to create your own
@@ -28,18 +36,12 @@ print("My Simple Calculator")
 # -------------------------------------------- 
 
 # Write a function called add_numbers that will take two numbers and return the sum.
-
-
-
-
-
-
+def add_numbers(x, y):
+     return x + y
 
 # Write a function called sub_numbers that will take two numbers and return the difference.
-
-
-
-
+def sub_numbers(x, y):
+     return x - y
 
 # ------------
 # Testing Code - Uncomment the code below to test your code!
@@ -67,18 +69,12 @@ print("My Simple Calculator")
 # -------------------------------------------- 
 
 # Write a function called multiply_numbers that will take two numbers and return the product.
-
-
-
-
-
+def multiply_numbers(x, y):
+     return x * y
 
 # Write a function called divide_numbers that will take two numbers and return the quotient.
-
-
-
-
-
+def divide_numbers(x, y):
+     return x / y
 
 # ------------
 # Testing Code - Uncomment the code below to test your code!
@@ -87,9 +83,9 @@ print("My Simple Calculator")
 # check_answers(multiply_numbers(21, 7), 147);
 # check_answers(multiply_numbers(4, 16), 64); 
 
-# check_answers(divide_numbers(24, 100), `.24`);
-# check_answers(divide_numbers(21, 7), `3`);
-# check_answers(divide_numbers(15, 4), `3.75`);
+# check_answers(divide_numbers(24, 100), .24);
+# check_answers(divide_numbers(21, 7), 3);
+# check_answers(divide_numbers(15, 4), 3.75);
 
 # -------------------------------------------- 
 
@@ -101,7 +97,7 @@ print("My Simple Calculator")
 # Write a function that will prompt the user for the operation they want to call and the values they are inputting.
 
 # -------------------------------------------- 
-
+user = str
 
 
 
@@ -161,11 +157,3 @@ print("My Simple Calculator")
 
 
 
-# -------------------------------------------- 
-# Ignore this section. This is just for checking your work
-
-def check_answers(gen_answer, correct_answer):
-    if gen_answer == correct_answer:
-        print("Your code works!")
-    else:
-	    print(f"Try again, your code generated {gen_answer} but the correct answer is {correct_answer}")

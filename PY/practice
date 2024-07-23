@@ -1,0 +1,41 @@
+class Person:
+    def __init__(self, name: None):
+        self.name = name
+
+Ktrue = bool
+Ftrue = bool
+
+Karolay = Person(input(str("???????: Hello...what's my name again?   >> ")))
+if Karolay.name.title() == "Karolay":
+    print("Karolay: Yes, that's right!")
+    Ktrue = True
+elif Karolay.name.title() != "Karolay":
+    print("???????: No, that's not right...")
+    Ktrue = False
+
+Julian = Person(input(str("??????: Hello...and what's my name?   >> ")))
+if Julian.name.title() == "Julian":
+    print("Julian: Yes, that's right!")
+    Jtrue = True
+elif Julian.name.title() != "Julian":
+    print("??????: No, that's not right...")
+    Jtrue = False
+
+
+USER = Person(input(str("And, what's your name?   >> ")))
+
+def Kintroduce():
+    print(f"Karolay: Hello, my name is {Karolay.name.title()}")
+def Jintroduce():
+    print(f"Julian: Hello, my name is {Julian.name.title()}")
+
+def farewell():
+    print(f"Goodbye {USER.name.title()}, it was nice to meet you.")
+
+
+# if you don't get their names right, they won't say hi :((
+if Jtrue == True:
+    Jintroduce()
+if Kintroduce == True:
+    Kintroduce()
+farewell()

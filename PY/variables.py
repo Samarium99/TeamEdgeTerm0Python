@@ -18,11 +18,11 @@ print("------------------- Challenge 1 -------------------")
 
 name = "Sarah Mo"
 grade = 9
-funFact = "I enjoy musical theatre"
+funFact = "I enjoy musical theatre!!"
 
 print(f"Hi! My name is {name}")
 print(f"I'm in the {grade}th grade.")
-print(f"A fun fact about me is that {funFact}")
+print(f"A fun fact about me is that {funFact}") 
 
 
 # **** Challenge 1: Problem 1 ****
@@ -115,7 +115,7 @@ print(remainder)
 num = 9
 nums = 9 - 1
 numa = 9 + 1
-print(nums, numa)
+print(f"{nums}, {numa}")
 
 
 # -------------------------------------------- 
