@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= utf-8> 
+        <title>{{title}}</title>
+        <!-- <link rel="stylesheet" href="../style.css"> -->
+        <link href="{{ url_for('static', filename='fonts.css') }}" rel="stylesheet" type="text/css" />
+        <!-- <link href = "style.css" rel = "stylesheet"> -->
+    </head>
+    <style>
+        .title {
+            font-family: oldnews;
+        }
+        strong {
+            font-family: oldnews;
+        }
+        p {
+            font-family: typewriter;
+        }
+        .format { 
+            /* makes three partiions possible */
+            display: flex;
+            align-items: row;
+            justify-content: center;
+        }
+        .content {
+            /* holds the middle column */
+            text-align: justify;
+            margin: 5%;
+            width: 70%;
+            background-color: white;
+        }
+        .siding {
+            /* holds the side columns */
+            display: flex;
+            background-color:black;
+            width: 15%;
+            margin: 0%;
+        }
+        #button {
+            font-family: spellFont;
+            font-size: 40px;
+            padding-top: 2%;
+            background-color: white;
+            border-color: purple;
+        }
+
+    </style>
+    <body>
+        <div class="format">
+            <div class="siding"></div>
+            <div class="content">
+                <h1 class="title">User Manual: How to Navigate</h1>
+
+                <p>This project was completed 12/13/24 in Team Edge - SM</p>
+                <strong>Objective:</strong>
+                <p>The objective of this game is to collect six necessary ingredients and enter Sunset Hallow successfully, to fulfill the recipe. You do this by identifying the materials in the recipe book and using the address bar search query to navigate to different locations. The searches are written in the format: "/api/v1/search?enter=[location]" where the location does not include apostrophies.</p>
+                <strong>Game's Contents:</strong>
+                <p>The game is made up of a few pages:</p>
+                <ul><b>The Root: </b>The starting point of this game, providing context for how you come across the recipe book.</ul>
+                <ul><b>The Help Page (this one!): </b>A user manual which teaches the user how to navigate in this game and hopefully answers any questions</ul>
+                <ul><b>Recipe: </b>Tells the user which locations to search for.</ul>
+                <ul><b>Portal Page: </b>This page is only accessible to show the search query results. It is the page which the user enters when searching up a location and progressing the story.</ul>
+                <button id="button", type="button"><a href="/">Are You Ready to Try Again?</a></p></button>
+        <br><br><br><br>
+                <p>Need a little more help? Scroll Down</p>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+                <strong>Locations</strong>
+                <p>These are the locations must search up in the query and the items they are related to:</p>
+                <ul>Mom's House</ul>
+                <ul>The Cozy Cabin</ul>
+                <ul>The Easter Bunny</ul>
+                <ul>The Wooded Peaks</ul>
+                <ul>Windy Fields</ul>
+                <ul>Dragon's Cove</ul>
+                <ul>Sunset Hallow</ul>
+                <p>Remember: when you search these up in the search query, do not include apostrophies!</p>
+                <p>Example: http://127.0.0.1:5000/api/v1/search?enter=moms%20home</p>
+            </div>
+            <div class="siding"></div>
+        </div>
+    </body>
+    </html>

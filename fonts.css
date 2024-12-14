@@ -1,0 +1,24 @@
+@font-face {
+    font-family: spellFont; /* casual */
+    src: url('morris-roman.black.ttf');
+}
+@font-face {
+    font-family: upperSpell; /* woody looking */
+    src: url('DarkMystic.otf');
+}
+@font-face {
+    font-family: recipeTitle;
+    src: url('handwrite.ttf');
+}
+@font-face {
+    font-family: handwriting; 
+    src: url('OceanTrace.ttf');
+}
+@font-face {
+    font-family: typewriter; 
+    src: url('typewriter.ttf');
+}
+@font-face {
+    font-family: oldnews; 
+    src: url('OldNews.ttf');
+}
