@@ -1,0 +1,9 @@
+-- database: /Users/student/Desktop/flaskdatabase/static/data/myapp.db
+
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+-- INSERT INTO users(users_name, email, esubject, emessage)
+-- VALUES ("Sarah Mo","sarahyuemo@gmail.com","Testing","Hello, does this work?");
+
+DELETE FROM users WHERE email = "sarahyuemo@gmail.com";

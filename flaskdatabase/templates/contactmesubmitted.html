@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>| Sarah Mo | 2024-2025 Portfolio |</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+  <body>
+    <img src= "https://images.nightcafe.studio/jobs/BETmfVhS3a97huK3RdlU/BETmfVhS3a97huK3RdlU-9YitY-cropped_2x-real-esrgan-x4-plus.jpg?tr=w-1600,c-at_max" alt= "banner image">
+    <nav>
+      <ul> <!-- Contents of Nav Bar -->
+        <li><a class="active" href="/."><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="/myprojects.html">My Projects</a></li>
+        <li><a href="/contactme.html">Contact Me</a></li>
+        <li style="float:right"> <a href="#menu"><i class="fa fa-bars"></i></a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="container">
+        <div class="center-vertical">
+          <div class="centertext">
+            <p>Email Sent!</p>
+            <p>Thank you for contacting me, {{users_name}}!</p>
+            <p> This was your sent email: 
+              {{emessage}}</p>
+            
+            <p>Sincerely, 
+              
+            Sarah Mo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
