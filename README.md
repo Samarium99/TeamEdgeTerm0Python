@@ -1,2 +1,2 @@
-
-https://glitch.com/edit/#!/open-resonant-balance
+Team Edge Python Projects
+Summer 2024
